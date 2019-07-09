@@ -27,6 +27,10 @@ app.get("/:id", (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("go to /notices for notices, /links for VVIP links");
+});
+
 var port = process.env.PORT || 8080;
 
 app.listen(port);

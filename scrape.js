@@ -1,8 +1,9 @@
-//this module returns a promise after scraping the notice board of the website.
+//this module returns a promise after scraping the website.
 
 const cheerio = require("cheerio");
 const request = require("request");
 
+//notice board scraping
 function scrapeNoticeBoard() {
   return new Promise(resolve => {
     request(
@@ -34,6 +35,7 @@ function scrapeNoticeBoard() {
   });
 }
 
+//VVIP links
 function scrapeVVIP() {
   return new Promise(resolve => {
     request(
